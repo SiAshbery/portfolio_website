@@ -24,14 +24,85 @@
   .menu-btn:focus {
     outline: 0; }
 
-.hide {
-  display: none; }
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.9;
+  visibility: visible; }
+  .menu.hide {
+    visibility: hidden; }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%;
+    height: 100vh;
+    overflow: hidden; }
+  .menu-nav {
+    transition: all 0.3s ease-out;
+    margin: 0;
+    padding: 0;
+    background: #384550;
+    list-style: none;
+    transform: translate3d(0, 0, 0); }
+    .menu-nav.hide {
+      transform: translate3d(0, -100%, 0); }
+  .menu-branding {
+    transition: all 0.3s ease-out;
+    background: #43525f;
+    transform: translate3d(0, 0, 0); }
+    .menu-branding.hide {
+      transform: translate3d(0, 100%, 0); }
+    .menu-branding .portrait {
+      width: 250px;
+      height: 250px;
+      background: url(../img/avatar.jpg);
+      background-size: contain;
+      border-radius: 50%;
+      border: solid 3px #c765bc; }
+  .menu .nav-item {
+    transition: all 0.3s ease-out;
+    transform: translate3d(0, 0, 0); }
+    .menu .nav-item.hide {
+      transform: translate3d(600px, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #c765bc; }
+  .menu .nav-link {
+    transition: all 0.3s ease-out;
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none; }
+    .menu .nav-link:hover {
+      color: #c765bc; }
+
+.nav-item:nth-child(1) {
+  transition-delay: 0.1s; }
+
+.nav-item:nth-child(2) {
+  transition-delay: 0.2s; }
+
+.nav-item:nth-child(3) {
+  transition-delay: 0.3s; }
+
+.nav-item:nth-child(4) {
+  transition-delay: 0.4s; }
+
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
 
 * {
   box-sizing: border-box; }
 
 body {
-  background: #444;
+  background: #43525f;
   color: white;
   height: 100%;
   margin: 0;
@@ -49,7 +120,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.6); }
+      background: rgba(67, 82, 95, 0.6); }
 
 h1,
 h2,
@@ -65,7 +136,7 @@ h3 {
   h3.sm-heading {
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
-    background: rgba(73, 73, 73, 0.5); }
+    background: rgba(71, 87, 101, 0.5); }
 
 a {
   color: #fff;
@@ -77,7 +148,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #c765bc; }
 
 main {
   padding: 4rem;
@@ -88,7 +159,7 @@ main {
       padding: 0.4rem; }
       main .icons a:hover {
         transition: all 0.3s ease-out;
-        color: #eece1a; }
+        color: #c765bc; }
   main#home {
     overflow: hidden; }
     main#home h1 {
