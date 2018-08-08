@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/main.css">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>
-        The Portfolio of Simon Ashbery
+        Contact Me
     </title>
 </head>
 
-<body id="bg-image">
+<body>
     <header>
         <button class="menu-btn">
             <div class="btn-line"></div>
@@ -25,9 +25,8 @@
             <div class="menu-branding hide">
                 <div class="portrait"></div>
             </div>
-            <!-- IMPROVEMENT: Use partials to encapsulate navigation, polymer? handlebars -->
             <ul class="menu-nav hide">
-                <li class="nav-item hide current">
+                <li class="nav-item hide">
                     <a href="index.html" class="nav-link">
                         Home
                     </a>
@@ -47,7 +46,7 @@
                         Art
                     </a>
                 </li>
-                <li class="nav-item hide">
+                <li class="nav-item hide current">
                     <a href="contact.html" class="nav-link">
                         Contact
                     </a>
@@ -56,29 +55,30 @@
         </nav>
     </header>
 
-    <main id="home">
+    <main id="contact">
         <h1 class="lg-heading">
-            Simon
-            <span class="text-secondary">Ashbery</span>
+            Contact
+            <span class="text-secondary">Me</span>
         </h1>
         <h2 class="sm-heading">
-            Web Developer, Game Designer, Artist.
+            Placeholder
         </h2>
-        <div class="icons">
-            <a href="https://twitter.com/si_ashbery">
-                <i class="fab fa-twitter fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/artunitfive/">
-                <i class="fab fa-instagram fa-2x"></i>
-            </a>
-            <a href="https://linkedin.com/in/simon-ashbery">
-                <i class="fab fa-linkedin fa-2x"></i>
-            </a>
-            <a href="https://github.com/SiAshbery">
-                <i class="fab fa-github fa-2x"></i>
-            </a>
+        <div class="boxes">
+            <button>
+                <span class="text-secondary">Email:</span> test@test.com
+            </button>
+            <button>
+                <span class="text-secondary">Phone:</span> 1234567890
+            </button>
+            <button>
+                <span class="text-secondary">Address:</span> blah blah blah
+            </button>
         </div>
     </main>
+
+    <footer id="main-footer">
+        Copyright &copy; 2018
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

@@ -13,7 +13,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
   }
 
   &.close {
@@ -112,7 +112,7 @@
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
-    color: #fff;
+    color: set-text-color($primary-color);
     text-decoration: none;
 
     &:hover {
@@ -121,6 +121,7 @@
   }
 }
 
+// IMPROVEMENT: get rid of this delay, its bad UX and looks a bit tacky
 @for $x from 1 through 5 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;

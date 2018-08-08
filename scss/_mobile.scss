@@ -2,10 +2,15 @@
 // I also dislike this way of redfining each class inside each breakpoint. The breakpoints should be mixed into
 // The classes, that way you can see all the styling on one coherent place.
 
+// IMPROVEMENT: Move responsive behaviour into respective classes with breakpoints as mixins
+
 @include mediaXlrg {
 }
 
 @include mediaLrg {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @include mediaMed {
@@ -46,10 +51,27 @@
       transform: translate3d(100%, 0, 0);
     }
   }
+
+  .about-info {
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 @include mediaSml {
   main#home h1 {
     margin-top: 10vh;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
