@@ -1,9 +1,6 @@
 @import "config";
 @import "menu";
 
-// IMPROVEMENT: General alignment betweet header and content
-// IMPROVEMENT: MAx width set
-
 * {
   box-sizing: border-box;
 }
@@ -14,7 +11,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Oxygen", sans-serif;
   line-height: 1.5;
 }
 
@@ -30,7 +27,6 @@ h3 {
 
   &.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
   }
 }
 
@@ -55,12 +51,13 @@ main {
   min-height: calc(100vh - 60px);
   max-width: 1600px;
   margin: auto;
+  padding-top: 25vh;
 
   .icons {
     margin-top: 1rem;
 
     a {
-      padding: 0.4rem;
+      padding-right: 0.8rem;
 
       &:hover {
         @include easeOut();
@@ -71,10 +68,6 @@ main {
 
   &#home {
     overflow: hidden;
-
-    h1 {
-      margin-top: 20vh;
-    }
   }
 }
 
@@ -135,7 +128,6 @@ main {
   }
 }
 
-// IMPROVEMENT make btn sass
 .btn {
   display: block;
   padding: 0.5rem 1rem;
@@ -147,18 +139,18 @@ main {
     background: $secondary-color;
     color: set-text-color($secondary-color);
   }
-}
 
-.btn-dark {
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: set-text-color(darken($primary-color, 50));
-}
+  &-dark {
+    @extend .btn;
+    background: darken($primary-color, 50);
+    color: set-text-color(darken($primary-color, 50));
+  }
 
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 50);
-  color: set-text-color(lighten($primary-color, 50));
+  &-light {
+    @extend .btn;
+    background: lighten($primary-color, 50);
+    color: set-text-color(lighten($primary-color, 50));
+  }
 }
 
 .boxes {
@@ -169,7 +161,6 @@ main {
   margin-top: 1rem;
 
   button {
-    // IMPROVEMENT Buttons not divs, samantics
     @include easeOut;
     font-size: 2rem;
     border: 3px #fff solid;
@@ -180,9 +171,7 @@ main {
     color: set-text-color($primary-color);
 
     &:hover {
-      // IMPROVEMENT: got rid of padding transition as it looked naff
       background: $secondary-color;
-      // TODO: is there a current color selector?
       color: set-text-color($secondary-color);
       span {
         color: set-text-color($secondary-color);
