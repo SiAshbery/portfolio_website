@@ -47,38 +47,61 @@
     visibility: hidden;
   }
 
-  &-branding,
-  &-nav {
+  &-overlay {
+    float: none;
+    width: 100%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    float: left;
-    width: 50%;
-    height: 100vh;
     overflow: hidden;
+
+    @include bpMinMedium {
+      float: left;
+      width: 50%;
+    }
   }
 
   &-nav {
     @include easeOut;
+    transform: translate3d(0, 0, 0);
+    font-size: 24px;
     margin: 0;
     padding: 0;
     background: darken($primary-color, 5);
     list-style: none;
-    transform: translate3d(0, 0, 0);
+    height: 75vh;
+
+    @include bpMinMedium {
+      font-size: inherit;
+      height: 100vh;
+    }
 
     &.hide {
-      transform: translate3d(0, -100%, 0);
+      transform: translate3d(-100%, 0, 0);
+
+      @include bpMinMedium {
+        transform: translate3d(0, -100%, 0);
+      }
     }
   }
 
   &-branding {
     @include easeOut;
-    background: $primary-color;
+    height: 25vh;
     transform: translate3d(0, 0, 0);
+    background: $primary-color;
+
+    @include bpMinMedium {
+      height: 100vh;
+    }
 
     &.hide {
-      transform: translate3d(0, 100%, 0);
+      transform: translate3d(100%, 0, 0);
+
+      @include bpMinMedium {
+        transform: translate3d(0, 100%, 0);
+      }
     }
 
     .portrait {

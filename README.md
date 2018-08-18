@@ -24,12 +24,13 @@ In the process of building this site I made a series of changes to the original 
 
 These changes include but are not limited to:
 
+- Changes css to reflect mobile first ideology.
 - All clickables are converted from divs to links or buttons to improve accessibility.
 - Semi-transparent colour removed from .sm-heading.
 - Set a max-width of 1600px for content on the site.
 - Align .sm-heading with other elements in heading container.
 - Uses a colour scheme of my own chosing.
-- Positions cascade down from parents to children. Prefering padding in parents and margin-bottom in children higher in the hierarchy rather than margin-top on child elements (where possible).
+- Position styling cascades down from parents to children. Prefering padding in parents and margin-bottom in higher children rather than margin-top on child (or lower child) elements (where possible).
 - Better aligns elements on site.
 - Sparates projects into art, web-development and games development pages.
 - Adds highlights on main page. (TODO)
@@ -37,6 +38,7 @@ These changes include but are not limited to:
 - Improves UX by removing nav slide in.
 - Removes hover animation for contact boxes.
 - Try to reduce repetition as much as possible by using sass' awesomeness.
+- Separates scss out into individual files per section.
 
 ## Acknowledgements
 
