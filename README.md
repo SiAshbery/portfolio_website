@@ -2,7 +2,7 @@
 
 **This is my personal portfolio website, modified from Traversy Media's responsive portfolio website tutorial.**
 
-The original tutorial series can be found here: https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU
+The original tutorial series can be found here: [Responsive Portfolio Website Tutorial](https://www.youtube.com/watch?v=gYzHS-n2gqU&list=PLillGF-RfqbYoGoCjKoMOkVznV6aSXKzU)
 
 ## Why use a tutorial?
 
