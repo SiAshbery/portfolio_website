@@ -24,8 +24,8 @@ In the process of building this site I made a series of changes to the original 
 
 These changes include but are not limited to:
 
-- Uses handlebars for templates/partials/helpers to modularize reuseable assets
-- Adds webpack to preprocess and steamline production assets
+- Uses handlebars for templates/partials/helpers to modularize reuseable assets.
+- Adds webpack to preprocess and steamline production assets.
 - Changes css to reflect mobile first ideology.
 - All clickables are converted from divs to links or buttons to improve accessibility.
 - Semi-transparent colour removed from .sm-heading.
@@ -36,7 +36,7 @@ These changes include but are not limited to:
 - Better aligns elements on site.
 - Sparates projects into art, web-development and games development pages.
 - Adds highlights on main page. (TODO)
-- Changes show class to hide as this prevents having to define display property for where the default is fine.
+- Changes show class to hide as this prevents having to define display property when the default behaviour is desired.
 - Improves UX by removing nav slide in.
 - Removes hover animation for contact boxes.
 - Try to reduce repetition as much as possible by using sass' awesomeness.
