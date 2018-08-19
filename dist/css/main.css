@@ -78,7 +78,7 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/avatar.jpg);
+      background: url(../assets/img/avatar.jpg);
       background-size: contain;
       border-radius: 50%;
       border: solid 3px #c765bc; }
@@ -197,7 +197,7 @@ body {
   font-family: "Oxygen", sans-serif;
   line-height: 1.5; }
   body#bg-image {
-    background: url(../img/background.jpg);
+    background: url(../assets/img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-image:after {

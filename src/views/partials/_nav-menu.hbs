@@ -1,0 +1,44 @@
+<button class="menu-btn">
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+    <div class="btn-line"></div>
+</button>
+
+<nav class="menu hide">
+    <div class="menu-branding menu-overlay hide">
+        <div class="portrait"></div>
+    </div>
+    <!-- IMPROVEMENT: Use partials to encapsulate navigation, polymer? handlebars -->
+    <ul class="menu-nav menu-overlay hide">
+        <li class="nav-item hide {{navCurrent 'home' current}}">
+            <a href="index.html" class="nav-link ">
+                Home
+            </a>
+        </li>
+        <li class="nav-item hide {{navCurrent 'about' current}}">
+            <a href="about.html" class="nav-link">
+                About Me
+            </a>
+        </li>
+        <li class="nav-item hide {{navCurrent 'art' current}}">
+            <a href="art.html" class="nav-link">
+                Art
+            </a>
+        </li>
+        <li class="nav-item hide {{navCurrent 'web' current}}">
+            <a href="web-development.html" class="nav-link">
+                Web Development
+            </a>
+        </li>
+        <li class="nav-item hide {{navCurrent 'game' current}}">
+            <a href="game-development.html" class="nav-link">
+                Game Development
+            </a>
+        </li>
+        <li class="nav-item hide {{navCurrent 'contact' current}}">
+            <a href="contact.html" class="nav-link">
+                Contact
+            </a>
+        </li>
+    </ul>
+</nav>

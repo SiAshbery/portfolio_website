@@ -3,8 +3,8 @@
 $primary-color: #43525f;
 $secondary-color: #c765bc;
 $show-home-image: true;
-$home-image: url(../img/background.jpg);
-$profile-image: url(../img/avatar.jpg);
+$home-image: url(../assets/img/background.jpg);
+$profile-image: url(../assets/img/avatar.jpg);
 $background-opacity: 0.6;
 
 @mixin easeOut {
@@ -37,29 +37,5 @@ $background-opacity: 0.6;
     @return #000;
   } @else {
     @return #fff;
-  }
-}
-
-@mixin mediaSml {
-  @media screen and (max-width: 500px) {
-    @content;
-  }
-}
-
-@mixin mediaMed {
-  @media screen and (max-width: 768px) {
-    @content;
-  }
-}
-
-@mixin mediaLrg {
-  @media screen and (min-width: 769px) and (max-width: 1170px) {
-    @content;
-  }
-}
-
-@mixin mediaXlrg {
-  @media screen and (min-width: 1171px) {
-    @content;
   }
 }
